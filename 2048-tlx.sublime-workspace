@@ -1,0 +1,541 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"alt",
+				"alternateData"
+			],
+			[
+				"mediaF",
+				"mediaFileType"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"glyphicon-tra",
+				"glyphicon-trash	BootstrapClass"
+			],
+			[
+				"toHave",
+				"toHaveBeenCalledWith"
+			],
+			[
+				"list-g",
+				"list-group-item	BootstrapClass"
+			],
+			[
+				"ng",
+				"ng-include	AngularJS"
+			],
+			[
+				"des",
+				"description"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 288.0,
+		"selected_items":
+		[
+			[
+				"angularjs",
+				"AngularJS: Rebuild Search Index"
+			],
+			[
+				"extra",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"packageresource",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"API-Completion-Package: Settings – Default"
+			],
+			[
+				"api",
+				"API-Completion-Package: Settings – User"
+			],
+			[
+				"repository",
+				"Package Control: Add Repository"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/DevelopmentMullen/Node/meangirls/mean/test/protractor/spec/assets_po.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/routes/auth-c-route.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/test/karma/karma.conf.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/css/app.less",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/controllers/assets-c-ctrl.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/routes/assets-routes.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/controllers/assets.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/middlewares/imgmanip.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/models/options/modelopts.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/models/Asset.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/test/mocha/user/model.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/init.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/assets.json",
+		"/C/DevelopmentMullen/Node/meangirls/mean/MeanGirls.njsproj",
+		"/C/DevelopmentMullen/Node/meangirls/mean/node_modules/browserify/node_modules/JSONStream/test/fixtures/all_npm.json",
+		"/C/DevelopmentMullen/Node/meangirls/mean/AUTHORS",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/templates/popover.image.tpl.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets-mod.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/views/layouts/default.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/system/bootstrap.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/util.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/env/all.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/env/development.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/env/production.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/config.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/assets/list.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/assets/view.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/middlewares/mediametadata.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/csslib/angular-motion.css",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/directives/global-directives.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/templates/upload.module.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/assets/create.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/README.md",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/middlewares/media-inspect.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/browserify/sconfig.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/mediautil.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/middlewares/authorization.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/modelopts.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/templates/updated.tpl.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/routes/middlewares/authorization.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/test/karma/unit/controllers/assets.spec.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/controllers/campaigns-c-ctrl.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/controllers/clients-c-ctrl.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/controllers/clients.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/test/karma/unit/controllers/campaigns.spec.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/test/karma/unit/controllers/clients.spec.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/test/karma/unit/controllers/campaigns.spec - Copy.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/jslib/angular/angular-scenario.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/models/Campaign.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/clients/list.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/campaigns/list.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/css/buttons.less",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/css/imports/colors.less",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/css/spinners.less",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/clients/view.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/assets/edit.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/clients/edit.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/routes/clients-c-route.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/campaigns/edit.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/campaigns/view.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/campaigns/create.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/auth/register.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/shared/header.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/routes/assets-c-route.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/routes/system-c-route.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/shared/index.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/routes/campaigns-c-route.js",
+		"/C/DevelopmentMullen/Github/acura-adbuilder/source/AdBuilder/AdBuilder.Web/assets_new/css/order/main_new.less",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/system-mod.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/controllers/header-c-ctrl.js",
+		"/C/DevelopmentMullen/Github/acura-adbuilder/source/AdBuilder/AdBuilder.Web/Views/Shared/_Layout.cshtml",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/routes/campaigns-routes.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/controllers/campaigns.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/services/model-services.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/views/404.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/.bower-cache/62c903e33a8a6ef032774d5ca73673d9/master/src/viewScroll.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/node_modules/grunt-contrib-less/node_modules/less/test/css/variables-in-at-rules.css",
+		"/C/DevelopmentMullen/Node/meangirls/mean/.bower-cache/76825ba06db421bbfbda0853e440b3f5/3.0.3/less/component-animations.less",
+		"/C/DevelopmentMullen/Node/meangirls/mean/node_modules/grunt-contrib-csslint/CHANGELOG",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/campaigns-mod.js",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/routes/clients-routes.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/routes/index-routes.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/config/express.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/routes/globalinfo-routes.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/models/Client.js",
+		"/C/DevResources/JS/select2-3.4.5/select2.css",
+		"/C/DevResources/JS/select2-3.4.5/select2x2.png",
+		"/C/DevResources/JS/select2-3.4.5/select2-bootstrap.css",
+		"/C/DevResources/JS/select2-3.4.5/select2-spinner.gif",
+		"/C/DevResources/JS/select2-3.4.5/select2.png",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/controllers/globalinfo.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/routes/users-routes.js",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/User/sublime-API-Completions-Package.sublime-settings",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/controllers/sconfig.js",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/JavaScript and jQuery API Completions/sublime-API-Completions-Package.sublime-settings",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/CSS Extended Completions/css_style_completions.sublime-settings",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/User/css_style_completions.sublime-settings",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/css/app.css",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/clients/create.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/models/User.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/controllers/users.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/auth/login.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/views/auth/index.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/clients-mod.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/node_modules/forever/node_modules/winston/examples/custom-levels.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/views/index.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/server/views/includes/head.html",
+		"/C/DevelopmentMullen/Node/meangirls/mean/.jshintrc",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/assets/csslib/bootstrap.css",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/services/articles.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/controllers/index-c-ctrl.js",
+		"/C/DevelopmentMullen/Node/meangirls/mean/public/articles-mod.js",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 2/Packages/User/AngularJS-sublime-package.sublime-settings",
+		"/C/Users/rparker/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"C:\\DevelopmentMullen\\Node\\meangirls\\mean\\public",
+			"C:\\DevelopmentMullen\\Node\\meangirls\\mean\\server",
+			"C:\\DevelopmentMullen\\Node\\meangirls\\mean"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#!",
+			"fullPath",
+			"C:\\\\Assets\\\\Pres\\\\",
+			"resizers",
+			"momentDate",
+			"ast",
+			"mfNameLower",
+			"getimagedata",
+			"browserify",
+			"'.",
+			"mediafiletype",
+			"mediafiletypes",
+			"campaignListData",
+			"detailScope",
+			"AssetDetailsController",
+			"Campaign",
+			"console.log",
+			"',",
+			"console.log",
+			"campaign",
+			"client",
+			"Client",
+			"$emit",
+			"$onRootScope",
+			"$emit",
+			"$onRootScope",
+			"detail",
+			"scope",
+			"updated client",
+			".log",
+			"ClientListController",
+			"article",
+			"Article",
+			"article",
+			"articles",
+			"Articles",
+			"articles",
+			"Articles",
+			"articles",
+			"ArticlesController",
+			"\"",
+			"system/lib",
+			"6",
+			"sm",
+			"state",
+			"([0-9]{4})",
+			"loadById",
+			"assetId",
+			"id",
+			"Id",
+			"id",
+			"client",
+			"Client",
+			"client",
+			"campaign",
+			"req.params.campaignId",
+			"Article",
+			"article",
+			"mapped",
+			"/campaigns",
+			"router",
+			"loggedin",
+			"mediafileSchema",
+			"md",
+			"Asset",
+			"updated.push(",
+			"updated",
+			"article",
+			"format",
+			"args",
+			"client",
+			"Campaign",
+			"campaigns",
+			"h1",
+			"Asset",
+			"bootstrap",
+			"packageModules",
+			"article",
+			"asset",
+			"Article",
+			"asset",
+			"Article",
+			"create",
+			"Article",
+			"campaign",
+			"Content",
+			"title",
+			"Article",
+			"Content",
+			"title",
+			"asset",
+			"title",
+			"asset",
+			"Title",
+			"Asset",
+			"assets",
+			"title",
+			"Asset",
+			"asset",
+			"Client",
+			"asset",
+			"articles",
+			"title",
+			"Articles",
+			"title",
+			"articles",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"article",
+			"Article",
+			"Client",
+			"Article",
+			"mongoose",
+			"ref",
+			"\n        ",
+			"},\n",
+			"ArticleSchema"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"Asset",
+			"Campaign",
+			"client",
+			"'",
+			"assets/jslib",
+			"asset",
+			"sm",
+			"Client",
+			"Campaign",
+			"asset",
+			"Client",
+			"clients",
+			"assets",
+			"Campaign",
+			"campaign",
+			"Client",
+			"client",
+			"Client",
+			"update",
+			"Client",
+			"client",
+			"Description",
+			"name",
+			"Client",
+			"Description",
+			"name",
+			"campaign",
+			"name",
+			"campaign",
+			"Name",
+			"Campaign",
+			"campaigns",
+			"name",
+			"Campaign",
+			"campaign",
+			"Campaign",
+			"Asset",
+			"CampaignAsset",
+			"Campaign",
+			"client",
+			"clients",
+			"Clients",
+			"clients",
+			"client"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "2048-tlx.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"views/ass",
+				"public\\views\\assets\\view.html"
+			],
+			[
+				"campaigns/v",
+				"public\\views\\campaigns\\view.html"
+			],
+			[
+				"clients-c-c",
+				"public\\controllers\\clients-c-ctrl.js"
+			],
+			[
+				"campaigns-c-",
+				"public\\controllers\\campaigns-c-ctrl.js"
+			],
+			[
+				"article",
+				"public/articles-mod.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
