@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hsrobmln/2048"
+    "url": "https://github.com/martenc/2048-TLX"
   },
-  "author": "Robert Parker",
+  "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hsrobmln/2048/issues"
+    "url": "https://github.com/martenc/2048-TLX/issues"
   },
-  "homepage": "https://github.com/hsrobmln/2048"
+  "homepage": "https://github.com/martenc/2048-TLX"
 }
