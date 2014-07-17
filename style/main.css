@@ -4,7 +4,7 @@ html, body {
   padding: 0;
   background: #2b2b2b;
   color: #e1e1e1;
-  font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "AcuraBespoke-Book", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 18px; }
 
 body {
@@ -16,7 +16,7 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 62px;
+  font-size: 42px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -54,7 +54,7 @@ h1.title {
   text-align: right;
   padding-bottom: 20px; }
 
-.score-container, .best-container {
+.time-container, .score-container, .best-container {
   position: relative;
   display: inline-block;
   background: #9c9c9c;
@@ -67,7 +67,7 @@ h1.title {
   color: white;
   margin-top: 8px;
   text-align: center; }
-  .score-container:after, .best-container:after {
+  .time-container:after, .score-container:after, .best-container:after {
     position: absolute;
     width: 100%;
     top: 10px;
@@ -77,7 +77,7 @@ h1.title {
     line-height: 13px;
     text-align: center;
     color: #e5e5e5; }
-  .score-container .score-addition, .best-container .score-addition {
+  .time-container .time-addition, .score-container .score-addition, .best-container .score-addition {
     position: absolute;
     right: 30px;
     color: red;
@@ -92,6 +92,9 @@ h1.title {
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
+
+.time-container:after {
+  content:"timer"; }
 
 .score-container:after {
   content: "Score"; }
@@ -631,7 +634,7 @@ hr {
   .container {
     width: 280px;
     margin: 0 auto; }
-  .score-container, .best-container {
+  .time-container, .score-container, .best-container {
     margin-top: 0;
     padding: 15px 10px;
     min-width: 40px; }

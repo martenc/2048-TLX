@@ -5,7 +5,8 @@
   "main": "index.html",
   "dependencies": {
     "express": "*",
-    "grunt": "~0.4.5"
+    "grunt": "~0.4.5",
+    "hbs" : "*"
   },
   "devDependencies": {
     "grunt-sass": "^0.12.1",
