@@ -1,7 +1,7 @@
 
 /* config */
 // seconds to countdown from
-var countdownSeconds = 7;
+var countdownSeconds = 45;
 
 
 // countdown
@@ -12,7 +12,6 @@ function Counter(options) {
     var onUpdateStatus = options.onUpdateStatus || function() {};
     var onCounterEnd = options.onCounterEnd || function() {};
     var onCounterStart = options.onCounterStart || function() {};
-
     
 
     function decrementCounter() {
@@ -37,12 +36,24 @@ function Counter(options) {
         clearInterval(timer);
     };
 
+    function restartCounter() {
+        seconds = countdownSeconds;
+        onCounterStart();
+        clearInterval(timer);
+        timer = 0;
+        decrementCounter();
+        timer = setInterval(decrementCounter, 1000);
+    };
+
     return {
         start : function() {
             startCounter();
         },
         stop : function() {
             stopCounter();
+        },
+        restart : function() {
+            restartCounter();
         }
     }
 };
@@ -64,14 +75,14 @@ var countdown = new Counter({
         if (second < 20) {
             $('#countdown-timer').css('color', 'red');
         }
+        else {
+            $('#countdown-timer').css('color', 'white');   
+        }
 
         if (second < 1) {
             modal.open({content: $("<p>Time is up!</p>"), width: "500px", height: "350px"});
-
-            KeyboardInputManager.prototype.restart = function (event) {
-                event.preventDefault();
-                this.emit("restart");
-            };
+            countdown.restart();
+            countdown.stop();
         }
     },
 

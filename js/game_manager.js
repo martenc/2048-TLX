@@ -15,6 +15,11 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 
 // Restart the game
 GameManager.prototype.restart = function () {
+
+  // restart the countdown timer
+  countdown.restart();
+
+
   this.storageManager.clearGameState();
   this.actuator.continueGame(); // Clear the game won/lost message
   this.setup();
@@ -33,7 +38,9 @@ GameManager.prototype.isGameTerminated = function () {
 
 // Set up the game
 GameManager.prototype.setup = function () {
-  var previousState = this.storageManager.getGameState();
+  
+  // DO NOT CONTINUE PREVIOUS GAME STATE
+  var previousState = false; //this.storageManager.getGameState();
 
   // Reload the game from a previous game if present
   if (previousState) {

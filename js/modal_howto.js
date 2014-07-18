@@ -42,6 +42,18 @@ var modal = (function(){
         $overlay.hide();
         $content.empty();
         $(window).unbind('resize.modal');
+
+        countdown.start();
+    };
+
+    // Close the modal after ending the game
+    method.closeGameOver = function () {
+        $modal.hide();
+        $overlay.hide();
+        $content.empty();
+        $(window).unbind('resize.modal');
+        
+        countdown.start();
     };
     
     // Generate the HTML and add it to the document
@@ -62,7 +74,6 @@ var modal = (function(){
         e.preventDefault();
         method.close();
 
-        countdown.start();
     });
     
     return method;
@@ -75,12 +86,17 @@ $(document).ready(function(){
 
     $.get('howto.html', function(data){
         modal.open({content: data});
+
     });
     
     $('a#howto').click(function(e){
         $.get('howto.html', function(data){
           modal.open({content: data});
         });
+
+        // stop ...err pause timer
+        countdown.stop();
+
         e.preventDefault();
     });
 });
