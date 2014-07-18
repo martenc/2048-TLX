@@ -1,3 +1,9 @@
+
+/* config */
+// seconds to countdown from
+var countdownSeconds = 7;
+
+
 // countdown
 function Counter(options) {
     var timer;
@@ -6,6 +12,8 @@ function Counter(options) {
     var onUpdateStatus = options.onUpdateStatus || function() {};
     var onCounterEnd = options.onCounterEnd || function() {};
     var onCounterStart = options.onCounterStart || function() {};
+
+    
 
     function decrementCounter() {
         onUpdateStatus(seconds);
@@ -42,7 +50,7 @@ function Counter(options) {
 
 var countdown = new Counter({
     // number of seconds to count down
-    seconds: 5,
+    seconds: countdownSeconds,
 
     onCounterStart: function () { 
         // show pop up with a message 
@@ -51,12 +59,28 @@ var countdown = new Counter({
     // callback function for each second
     onUpdateStatus: function(second) {
         // change the UI that displays the seconds remaining in the timeout  
+        //console.log('time remaining:' + second);
+        $('#countdown-timer').text(second);
+        if (second < 20) {
+            $('#countdown-timer').css('color', 'red');
+        }
+
+        if (second < 1) {
+            modal.open({content: $("<p>Time is up!</p>"), width: "500px", height: "350px"});
+
+            KeyboardInputManager.prototype.restart = function (event) {
+                event.preventDefault();
+                this.emit("restart");
+            };
+        }
     },
 
     // callback function for final action after countdown
     onCounterEnd: function() {
         // show message that session is over, perhaps redirect or log out 
-        alert("time is up, game over!"); 
+        console.log("time is up, game over!"); 
     }
 });
-countdown.start();
+
+//countdown.start();
+

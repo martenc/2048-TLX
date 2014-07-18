@@ -61,6 +61,8 @@ var modal = (function(){
     $close.click(function(e){
         e.preventDefault();
         method.close();
+
+        countdown.start();
     });
     
     return method;
@@ -69,6 +71,8 @@ var modal = (function(){
 // Wait until the DOM has loaded before querying the document
 $(document).ready(function(){
     
+    //modal.open({content: $("<p>Howdy</p>"), width: "500px", height: "200px"});
+
     $.get('howto.html', function(data){
         modal.open({content: data});
     });

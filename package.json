@@ -6,7 +6,8 @@
   "dependencies": {
     "express": "*",
     "grunt": "~0.4.5",
-    "hbs" : "*"
+    "hbs": "*",
+    "moment": "~2.7.0"
   },
   "devDependencies": {
     "grunt-sass": "^0.12.1",
