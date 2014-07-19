@@ -4,36 +4,26 @@
   <meta charset="utf-8">
   <title>2048</title>
 
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link href="style/alpine-map.css" rel="stylesheet" type="text/css">
 
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <script type="text/JavaScript">
+  <!--
+  function timedRefresh(timeoutPeriod) {
+    setTimeout("location.reload(true);",timeoutPeriod);
+  }
+  //   -->
+  </script>
+
 </head>
-<body>
-  <div class="container">
-    <div class="heading">
-      <img src="/img/acura-logo.png" class="logo">
-      <h1 class="title">traffic maps</h1>
-    </div>
 
-
-
-    <p>
-      map 1
-    </p>
-    <p>
-      map 2
-    </p>
-
-  </div>
+<body onload="JavaScript:timedRefresh(15000);"  BGCOLOR="#000000">
+<div id = "container">
+  <div id ="map">
+<IMG SRC="http://apnservices.alpine-la.com/hb/images//AlpineTrafficMerged.jpg" width="1920" height="1080" border="0">
+</div>
+</div>
 
 
 </body>
+
 </html>
