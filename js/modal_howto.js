@@ -53,7 +53,6 @@ var modal = (function(){
         $content.empty();
         $(window).unbind('resize.modal');
         
-        countdown.start();
     };
     
     // Generate the HTML and add it to the document

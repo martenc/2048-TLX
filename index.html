@@ -1,105 +1,32 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
+  	<title>pods</title>
 
-  <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link href="style/modal.css" rel="stylesheet" type="text/css">
-
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
-  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+	<link href="style/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <img src="/img/acura-logo.png" class="logo">
-      <h1 class="title">2048 Game TLX Edition</h1>
-      <div class="scores-container">
-        <div class="time-container"><div id="countdown-timer">0</div></div>
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
+      <img src="/img/acura-logo.png" class="logo" style=" height: 100px; ">
     </div>
 
-    <div class="above-game">
-      <!-- <p class="game-intro">Join the images and get a top score!</p> -->
-      <a class="restart-button">New Game</a>
-      
-    </div>
-
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-	        <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
-        </div>
-      </div>
-
-      <div class="grid-container">
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-          <div class="grid-cell"></div>
-        </div>
-      </div>
-
-      <div class="tile-container">
-
-      </div>
-    </div>
-
-    <p class="game-explanation">
-      <a id='howto' href='#'>how to play</a>
-    </p>
+    <p style="text-align: center; margin-top: 50px;">
+    <a href="/game.html">Game side</a><br />
+    <a href="/map.html">Map side</a><br />
+    <a href="/productinfo.html">Product Info side</a><br />
+  	</p>
   </div>
-
-  <script src="js/jquery-2.1.1.min.js"></script>
-
-  <script type="text/javascript" src="js/countdown_timer.js"></script>
-  <script type="text/javascript" src="js/modal_howto.js"></script>
-
-  <script type="text/javascript" src="js/bind_polyfill.js"></script>
-  <script type="text/javascript" src="js/classlist_polyfill.js"></script>
-  <script type="text/javascript" src="js/animframe_polyfill.js"></script>
-  <script type="text/javascript" src="js/keyboard_input_manager.js"></script>
-  <script type="text/javascript" src="js/html_actuator.js"></script>
-  <script type="text/javascript" src="js/grid.js"></script>
-  <script type="text/javascript" src="js/tile.js"></script>
-  <script type="text/javascript" src="js/local_storage_manager.js"></script>
-  <script type="text/javascript" src="js/game_manager.js"></script>
-  <script type="text/javascript" src="js/application.js"></script>
-  
-  <!-- <script type="text/javascript" src="js/moment.min.js"></script> -->
-
-
 </body>
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/json.js"></script>
+<script type="text/javascript">
+
+
+
+</script>
+
 </html>

@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #2b2b2b;
+  background: #000;
   color: #e1e1e1;
   font-family: "AcuraBespoke-Book", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   font-size: 18px; }
@@ -57,12 +57,12 @@ h1.title {
 .time-container, .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #9c9c9c;
+  /*background: #9c9c9c;*/
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
   line-height: 47px;
-  font-weight: bold;
+  /*font-weight: bold;*/
   border-radius: 3px;
   color: white;
   margin-top: 8px;
@@ -83,7 +83,7 @@ h1.title {
     color: red;
     font-size: 25px;
     line-height: 25px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: rgba(225, 225, 225, 0.9);
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
@@ -148,7 +148,11 @@ hr {
     opacity: 1; } }
 
 .game-container {
-  margin-top: 40px;
+  border: #A0A0A0;
+  border-width: thin;
+  border-top-style: solid;
+
+  margin-top: -15px;
   position: relative;
   padding: 15px;
   cursor: default;
@@ -159,7 +163,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #9c9c9c;
+  /*background: #9c9c9c;*/
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -185,7 +189,7 @@ hr {
     animation-fill-mode: both; }
     .game-container .game-message p {
       font-size: 40px;
-      font-weight: bold;
+      /*font-weight: bold;*/
       height: 60px;
       line-height: 60px;
       margin-top: 222px; }
@@ -608,7 +612,7 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: dimgrey;
+  /*background: dimgrey;*/
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
@@ -617,7 +621,9 @@ hr {
   line-height: 42px;
   display: block;
   text-align: center;
-  float: right; }
+  float: left; 
+  margin-top: 28px;
+}
 
 .game-explanation {
   margin-top: 50px; }
@@ -663,7 +669,7 @@ hr {
     -ms-user-select: none;
     -ms-touch-action: none;
     touch-action: none;
-    background: #9c9c9c;
+    /*background: #9c9c9c;*/
     border-radius: 6px;
     width: 280px;
     height: 280px;
@@ -689,7 +695,7 @@ hr {
       animation-fill-mode: both; }
       .game-container .game-message p {
         font-size: 60px;
-        font-weight: bold;
+        /*font-weight: bold;*/
         height: 60px;
         line-height: 60px;
         margin-top: 222px; }
@@ -816,9 +822,26 @@ hr {
   .game-message .lower {
     margin-top: 30px !important; } }
 
+.howtoplay {
+  display: block;
+  float: right;
+  height: 35px;
+  opacity: 0.5;
+}
+
 .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 35px;
+    padding-top: 18px;
+    height: 220px;
+}
+
+.disclaimer {
+  position: absolute;
+  font-size: 0.5em;
+  padding: 15px;
+  color: #999;
+  bottom: 5px;
 }

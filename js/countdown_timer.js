@@ -1,7 +1,7 @@
 
 /* config */
 // seconds to countdown from
-var countdownSeconds = 45;
+var countdownSeconds = 120;
 
 
 // countdown
@@ -68,7 +68,7 @@ var countdown = new Counter({
     },
 
     // callback function for each second
-    onUpdateStatus: function(second) {
+    onUpdateStatus: function (second) {
         // change the UI that displays the seconds remaining in the timeout  
         //console.log('time remaining:' + second);
         $('#countdown-timer').text(second);
@@ -80,7 +80,10 @@ var countdown = new Counter({
         }
 
         if (second < 1) {
-            modal.open({content: $("<p>Time is up!</p>"), width: "500px", height: "350px"});
+            $.get('gameover.html', function(data){
+                modal.open({content: data});
+
+            });
             countdown.restart();
             countdown.stop();
         }
