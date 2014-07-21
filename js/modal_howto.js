@@ -59,7 +59,7 @@ var modal = (function(){
     $overlay = $('<div id="overlay"></div>');
     $modal = $('<div id="modal"></div>');
     $content = $('<div id="content"></div>');
-    $close = $('<a id="close" href="#">close</a>');
+    //$close = $('<a id="close" href="#">close</a>');
     
     $modal.hide();
     $overlay.hide();
@@ -69,7 +69,7 @@ var modal = (function(){
         $('body').append($overlay, $modal);           
     });
     
-    $close.click(function(e){
+    $overlay.click(function(e){
         e.preventDefault();
         method.close();
 

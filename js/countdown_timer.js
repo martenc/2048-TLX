@@ -1,7 +1,7 @@
 
 /* config */
 // seconds to countdown from
-var countdownSeconds = 120;
+var countdownSeconds = 20;
 
 
 // countdown
@@ -59,42 +59,6 @@ function Counter(options) {
 };
 
 
-var countdown = new Counter({
-    // number of seconds to count down
-    seconds: countdownSeconds,
-
-    onCounterStart: function () { 
-        // show pop up with a message 
-    },
-
-    // callback function for each second
-    onUpdateStatus: function (second) {
-        // change the UI that displays the seconds remaining in the timeout  
-        //console.log('time remaining:' + second);
-        $('#countdown-timer').text(second);
-        if (second < 20) {
-            $('#countdown-timer').css('color', 'red');
-        }
-        else {
-            $('#countdown-timer').css('color', 'white');   
-        }
-
-        if (second < 1) {
-            $.get('gameover.html', function(data){
-                modal.open({content: data});
-
-            });
-            countdown.restart();
-            countdown.stop();
-        }
-    },
-
-    // callback function for final action after countdown
-    onCounterEnd: function() {
-        // show message that session is over, perhaps redirect or log out 
-        console.log("time is up, game over!"); 
-    }
-});
 
 //countdown.start();
 

@@ -19,7 +19,6 @@ GameManager.prototype.restart = function () {
   // restart the countdown timer
   countdown.restart();
 
-
   this.storageManager.clearGameState();
   this.actuator.continueGame(); // Clear the game won/lost message
   this.setup();
