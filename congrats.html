@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <style>
+
+	.basic-slide {
+	  margin-top: 290px;
+	  margin-left: 190px;
+
+	  display: inline-block;
+	  width: 215px;
+	  padding: 10px 0 10px 15px;
+	  font-family: "AcuraBespoke-Book", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  	  font-size: 14px;
+	  background: #efefef;
+	  border: 0;
+	  border-radius: 3px;
+	  outline: 0;
+	  /*text-indent: 70px; // Arbitrary.*/
+	  transition: all .3s ease-in-out;
+	  
+	  &::-webkit-input-placeholder {
+	    color: #efefef;
+	    text-indent: 0;
+	    font-weight: 300;
+	  }
+	}
+	
+
+  </style>
+
+</head>
+<body>
+
+<div id='modal-window' style="background:url(img/congrats_modal.png) center no-repeat #000; height:455px; width:600px;">
+
+ <span>
+    <input class="basic-slide" id="name" onclick="show_keyboard()" type="text" placeholder="Your name" /> <br />
+  	<input type="button" id="cancelbutton" value="cancel" /> 
+  	<input type="button" id="submitbutton" value="submit" />
+  </span>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+
+/*
+$(function(){ var operation = "A"; //"A"=Adding; 
+	var selected_index = -1; //Index of the selected list item 
+	var tbLeaders = localStorage.getItem("leaderboard"); //Retrieve the stored data 
+	tbLeaders = JSON.parse(tbLeaders); //Converts string to object 
+	if(tbLeaders == null) //If there is no data, initialize an empty array 
+		tbLeaders = []; 
+});
+
+var currentScore = JSON.parse(window.localStorage.getItem('gameState'));
+
+function AddLeader(){
+	var leader = JSON.stringify({
+		Name : $('#name').val(),
+		Score: currentScore['score']
+	});
+	tbLeaders.push(leader);
+	window.localStorage.setItem("leaderboard", JSON.stringify(tbLeaders));
+	console.log('new leader added: ' + $('#name').val());
+}
+*/
+
+
+function show_keyboard(){
+	console.log("show_keyboard");
+}
+
+$('#cancelbutton').click(function() {
+	location.reload(true);
+});
+
+$('#submitbutton').click(function() {
+	var tbLeaders = localStorage.getItem("leaderboard"); //Retrieve the stored data 
+	tbLeaders = JSON.parse(tbLeaders); //Converts string to object 
+	if(tbLeaders == null) { //If there is no data, initialize an empty array 
+		tbLeaders = []; 
+	});
+
+	var currentScore = JSON.parse(window.localStorage.getItem('gameState'));
+
+	var leader = JSON.stringify({
+			Name : $('#name').val(),
+			Score: currentScore['score']
+	});
+	tbLeaders.push(leader);
+	window.localStorage.setItem("leaderboard", JSON.stringify(tbLeaders));
+	console.log('new leader added: ' + $('#name').val());
+
+	location.reload(true);
+});
+
+
+</script>
+
+</html>
