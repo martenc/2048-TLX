@@ -69,11 +69,11 @@ var modal = (function(){
         $('body').append($overlay, $modal);           
     });
     
-    $overlay.click(function(e){
-        e.preventDefault();
-        method.close();
+    // $overlay.click(function(e){
+    //     e.preventDefault();
+    //     method.close();
 
-    });
+    // });
     
     return method;
 }());

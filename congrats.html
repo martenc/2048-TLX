@@ -40,7 +40,7 @@
 
  <span>
     <input class="basic-slide" id="name" onclick="show_keyboard()" type="text" placeholder="Your name" /> <br />
-  	<input type="button" id="cancelbutton" value="cancel" /> 
+  	<input type="button" id="cancelbutton" value="cancel" style=" margin-left: 190px; " /> 
   	<input type="button" id="submitbutton" value="submit" />
   </span>
 
@@ -50,29 +50,6 @@
 
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
-
-/*
-$(function(){ var operation = "A"; //"A"=Adding; 
-	var selected_index = -1; //Index of the selected list item 
-	var tbLeaders = localStorage.getItem("leaderboard"); //Retrieve the stored data 
-	tbLeaders = JSON.parse(tbLeaders); //Converts string to object 
-	if(tbLeaders == null) //If there is no data, initialize an empty array 
-		tbLeaders = []; 
-});
-
-var currentScore = JSON.parse(window.localStorage.getItem('gameState'));
-
-function AddLeader(){
-	var leader = JSON.stringify({
-		Name : $('#name').val(),
-		Score: currentScore['score']
-	});
-	tbLeaders.push(leader);
-	window.localStorage.setItem("leaderboard", JSON.stringify(tbLeaders));
-	console.log('new leader added: ' + $('#name').val());
-}
-*/
-
 
 function show_keyboard(){
 	console.log("show_keyboard");
@@ -87,7 +64,7 @@ $('#submitbutton').click(function() {
 	tbLeaders = JSON.parse(tbLeaders); //Converts string to object 
 	if(tbLeaders == null) { //If there is no data, initialize an empty array 
 		tbLeaders = []; 
-	});
+	}
 
 	var currentScore = JSON.parse(window.localStorage.getItem('gameState'));
 
