@@ -114,7 +114,7 @@ This game has been built borrowing code from: <span id="mit-license">Copyright (
   <script type="text/javascript" src="js/local_storage_manager.js"></script>
   <script type="text/javascript" src="js/game_manager.js"></script>
   <script type="text/javascript" src="js/application.js"></script>
-  
+  <script type="text/javascript" src="js/lodash.js"></script>
   <!-- <script type="text/javascript" src="js/moment.min.js"></script> -->
 
   <script type="text/javascript">
@@ -183,19 +183,8 @@ This game has been built borrowing code from: <span id="mit-license">Copyright (
   });
 
 
-  // sort utlity function
-  var sort_by = function(field, reverse, primer){
-   var key = primer ? 
-       function(x) {return primer(x[field])} : 
-       function(x) {return x[field]};
-
-   reverse = [-1, 1][+!!reverse];
-
-   return function (a, b) {
-       return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
-     } 
-  }
-
+//ready
+$(function() {
 
   // Leaderboard render
   function List(){   
@@ -206,20 +195,23 @@ This game has been built borrowing code from: <span id="mit-license">Copyright (
       tbLeaders = []; 
     }
 
-    // sort by score
-    // tbLeaders.sort(function(a, b) { 
-    //   return parseFloat(a.Score) - parseFloat(b.Score) 
-    // });
+    var sortedLeaders;
 
-    tbLeaders = tbLeaders.sort(sort_by('Score', true, parseInt));
+    // convert object to array
+    //sortedLeaders = $.map(tbLeaders, function(el) { return el; }); 
 
-    console.log('leaders... ' + tbLeaders);
+    //sort by score
+    //sortedLeaders = _(sortedLeaders).sortBy(function (obj) { return +obj.Score }); 
+    //sortedLeaders = _.sortBy(sortedLeaders, function (obj) { return +obj.Score });
+    sortedLeaders = _.sortBy(tbLeaders, 'Score').reverse();
+
+    console.log('sortedLeaders', sortedLeaders);
 
 
     $("#tblList").html(""); 
     $("#tblList").html( "<thead>" + 
       " <tr>" + 
-      " <th>Rank</th>" +  
+      " <th>Rank</th>" + 
       " <th>Name</th>" + 
       " <th>Score</th>" + 
       " </tr>" + 
@@ -228,20 +220,22 @@ This game has been built borrowing code from: <span id="mit-license">Copyright (
       "</tbody>" ); 
 
     var rank = 1;
-    for(var i in tbLeaders){ 
-      var cli = JSON.parse(tbLeaders[i]); 
+    for(var i in sortedLeaders){ 
+      var leader = sortedLeaders[i]; 
       if (rank < 6) {
         $("#tblList tbody").append("<tr>" + 
         " <td>" + rank + "</td>" + 
-        " <td>" + cli.Name +"</td>" + 
-        " <td>" + cli.Score +"</td>" + 
+        " <td>" + leader.Name +"</td>" + 
+        " <td>" + leader.Score +"</td>" + 
         "</tr>"); 
       }
       rank++;
     } 
   } 
 
-  List();
+List();
+
+});
 
   </script>
 

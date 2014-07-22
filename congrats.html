@@ -68,10 +68,10 @@ $('#submitbutton').click(function() {
 
 	var currentScore = JSON.parse(window.localStorage.getItem('gameState'));
 
-	var leader = JSON.stringify({
+	var leader = {
 			Name : $('#name').val(),
 			Score: currentScore['score']
-	});
+	};
 	tbLeaders.push(leader);
 	window.localStorage.setItem("leaderboard", JSON.stringify(tbLeaders));
 	console.log('new leader added: ' + $('#name').val());
