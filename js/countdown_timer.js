@@ -1,7 +1,7 @@
 
 /* config */
 // seconds to countdown from
-var countdownSeconds = 10;
+var countdownSeconds = 60;
 
 
 // countdown
