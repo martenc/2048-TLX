@@ -164,10 +164,35 @@ This game has been built borrowing code from: <span id="mit-license">Copyright (
           // check if the user has a new top score
           var currentScore = JSON.parse(window.localStorage.getItem('gameState'));
           var topScore = JSON.parse(window.localStorage.getItem('bestScore'));
-          //var leaderboard = JSON.parse(window.localStorage.getItem('leaderboard'));
+
+          //check to see if player is in the top five
+          var madeIt = false;
+          var topFive = localStorage.getItem("leaderboard"); //Retrieve the stored data 
+          topFive = JSON.parse(topFive); //Converts string to object 
+          if(topFive == null) { //If there is no data, initialize an empty array 
+            madeIt = true;
+          }
+          else {
+            var topFive = _.sortBy(topFive, 'Score').reverse();
+            if (topFive.length < 4) { // less than 5 in on the leaderboard
+              madeIt = true;
+            }
+            else {
+              for (var i in topFive) {
+                var fiver = topFive[i];
+                if (i == 4) { //get 5th person in the leaderboard
+                  if (currentScore['score'] > fiver.Score) {
+                    madeIt = true;
+                  }
+                }
+              }
+            }
+          }
+
+
 
           // new high score
-          if (currentScore['score'] == topScore) {
+          if (madeIt) {
             console.log('new winner!');
             // show winner modal
             $.get('congrats.html', function(data){
@@ -199,8 +224,7 @@ $(function() {
       tbLeaders = []; 
     }
 
-    var sortedLeaders;
-    sortedLeaders = _.sortBy(tbLeaders, 'Score').reverse();
+    var sortedLeaders = _.sortBy(tbLeaders, 'Score').reverse();
     //console.log('sortedLeaders', sortedLeaders);
 
 
