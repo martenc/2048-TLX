@@ -216,8 +216,8 @@ h2
 	/* Thumbnails */
 	.showcase-thumbnail-container /* Used for backgrounds, no other styling!!! */
 	{
-		background-color: #000;
-		/*background-color: #242424;*/
+		/*background-color: #000;*/
+		background-color: #242424;
 	}
 	
 	.showcase-thumbnail-wrapper
@@ -409,3 +409,8 @@ h2
   	bottom: 5px;
   	margin-top: 40px;
 }
+
+.showcase-thumbnail-restriction {
+	margin-left: 33px;
+}
+
