@@ -402,7 +402,8 @@ h2
 
 .disclaimer {
 	font-family: inherit;
-  	/*position: absolute;*/
+  	position: absolute;
+	display: block;
   	font-size: 0.5em;
   	padding: 15px;
   	color: #999;

@@ -112,7 +112,9 @@ h1.title {
   content: "Score"; }
 
 .best-container:after {
-  content: "Top Score"; }
+  content: "Top Score"; 
+  white-space: nowrap;
+}
 
 p {
   margin-top: 0;
