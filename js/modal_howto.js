@@ -12,7 +12,7 @@ var modal = (function(){
     method.center = function () {
         var top, left;
         
-        top = Math.max($(window).height() - $modal.outerHeight(), 0) / 4;
+        top = Math.max($(window).height() - $modal.outerHeight(), 0) / 3.5;
         left = Math.max($(window).width() - $modal.outerWidth(), 0) / 2;
         
         $modal.css({
