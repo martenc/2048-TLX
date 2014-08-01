@@ -172,14 +172,17 @@ This game has been built borrowing code from: <span id="mit-license">Copyright (
             madeIt = true;
           }
           else {
+            console.log('Number of leaders:' + topFive.length);
             var topFive = _.sortBy(topFive, 'Score').reverse();
-            if (topFive.length < 4) { // less than 5 on the leaderboard
+            if (topFive.length < 5) { // less than 5 on the leaderboard
               madeIt = true;
             }
             else {
               for (var i in topFive) {
+                console.log(i);
                 var fiver = topFive[i];
                 if (i == 4) { //get 5th person in the leaderboard
+                  console.log('5th leader has a score of: ' + fiver.Score);
                   if (currentScore['score'] > fiver.Score) {
                     madeIt = true;
                   }
