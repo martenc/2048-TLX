@@ -23,7 +23,7 @@ app.get('/', function(req, res) {
 });
 
 // spin up server (appfog)
-app.listen(process.env.VMC_APP_PORT || 8080, null);
+app.listen(process.env.PORT || 8080, null);
 // spin up server (azure or other)
 //app.listen(process.env.PORT || 8080, null);
 console.log('server running on port 8080');
